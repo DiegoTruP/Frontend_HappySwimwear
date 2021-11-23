@@ -1,0 +1,261 @@
+footer {
+  display: block;
+}
+
+.Footer {
+  padding: 34px 0;
+  background: #fff;
+  color: #939393;
+  border-top: 1px solid #e7e7e7;
+}
+
+.Container {
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.Footer__Aside {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.Footer__Inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.Footer__Aside {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* .Footer__Block {
+  margin-top: 0;
+  flex: 0 1 auto;
+}
+
+.Footer__Block:first-child {
+  margin-top: 0;
+} */
+
+.Footer__Block--text {
+  flex-basis: 460px;
+}
+
+.Footer__Inner + .Footer__Aside {
+  margin-top: 65px;
+}
+
+.Footer__Block {
+  margin-top: 48px;
+  /*flex-basis: 240px;*/
+
+}
+
+.Footer .Link--primary:hover{ /* titulos del futer */
+  color: #fe4597;
+}
+
+.Footer__Title{
+font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #fe4597;
+  transition: color 0.2s ease-in-out;
+  font-size: 15px
+}
+
+.Footer__Content + .Footer__Newsletter {
+  margin-top: 18px;
+}
+
+.Rte{
+  font-size: 15px;
+}
+
+.Footer__Social {
+  margin-top: 5px;
+}
+
+.HorizontalList {
+  list-style: none;
+  margin: -6px -8px;
+}
+
+.HorizontalList--spacingLoose {
+  margin-left: -14px;
+  margin-right: -14px;
+}
+.HorizontalList--spacingLoose .HorizontalList__Item {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.HorizontalList__Item {
+  display: inline-block;
+  margin: 6px 8px 6px 8px;
+}
+
+.Icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+  stroke-width: 1px;
+  background: 0 0;
+  pointer-events: none;
+}
+
+.Icon-Wrapper--clickable {
+  position: relative;
+  background: 0 0;
+}
+.Icon-Wrapper--clickable::before {
+  position: absolute;
+  content: "";
+  top: -8px;
+  right: -12px;
+  left: -12px;
+  bottom: -8px;
+  transform: translateZ(0);
+}
+
+
+.Linklist {
+  list-style: none;
+  padding: 0;
+}
+.Linklist__Item {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  width: 100%;
+  line-height: 1.5;
+  text-align: left;
+  transition: all 0.2s ease-in-out;
+}
+.Linklist__Item:last-child {
+  margin-bottom: 0 !important;
+}
+.Linklist__Item::before {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  top: calc(50% - 3px);
+  left: 0;
+  border-radius: 100%;
+  background: #5c5c5c;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.Link{
+  transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+button{
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  text-transform: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button,input[type="submit"] {
+  padding: 0;
+  overflow: visible;
+  background: 0 0;
+  border: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+.Button{
+  position: relative;
+  display: inline-block;
+  padding: 14px 28px;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-family: "Roboto Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+   background-color: #fe4597;
+  
+  z-index: 1;
+  -webkit-tap-highlight-color: initial;
+}
+
+.Button--primary{
+  color: #fff;
+  border-color: #fe4597;
+}
+
+.Button--primary::before{
+  background-color: #fe4597;
+}
+
+@media (-moz-touch-enabled: 0), (hover: hover) {
+  #shopify-product-reviews
+    .spr-button-primary:not(input):not([disabled])::before,
+  #shopify-product-reviews .spr-pagination-next > a:not([disabled])::before,
+  #shopify-product-reviews .spr-pagination-prev > a:not([disabled])::before,
+  #shopify-product-reviews
+    .spr-summary-actions-newreview:not([disabled])::before,
+  #shopify-product-reviews input.spr-button-primary:not([disabled])::before,
+  .Button:not([disabled])::before,
+  .shopify-payment-button__button--unbranded:not([disabled])::before {
+    transition: transform 0.45s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  }
+  #shopify-product-reviews
+    .spr-button-primary:not(input):not([disabled]):hover::before,
+  #shopify-product-reviews
+    .spr-pagination-next
+    > a:not([disabled]):hover::before,
+  #shopify-product-reviews
+    .spr-pagination-prev
+    > a:not([disabled]):hover::before,
+  #shopify-product-reviews
+    .spr-summary-actions-newreview:not([disabled]):hover::before,
+  #shopify-product-reviews
+    input.spr-button-primary:not([disabled]):hover::before,
+  .Button:not([disabled]):hover::before,
+  .shopify-payment-button__button--unbranded:not([disabled]):hover::before {
+    transform-origin: right center;
+    transform: scale(0, 1);
+  }
+}
+
+.Form__Input{
+  -webkit-appearance: none;
+  display: block;
+  padding: 12px 14px;
+  border-radius: 0;
+  border: 1px solid #e7e7e7;
+  width: 100%;
+  line-height: normal;
+  resize: none;
+  transition: border-color 0.1s ease-in-out;
+  background: 0 0;
+}
+
+.Form__Submit {
+  display: block;
+  margin-top: 20px;
+}
+
+
+
